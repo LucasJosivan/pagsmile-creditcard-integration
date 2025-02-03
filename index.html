@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplication</title>
+    <!-- Other head content -->
+    <link rel="stylesheet" href="css.css">
+    <script src="https://res.pagsmile.com/lib/js/pagsmile.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div>
+        <div class="logo-container">
+            <img src="https://pagsmile.com/_nuxt/img/pagsmile.23546cd.svg" alt="Pagsmile Logo">
+        </div>
+        <ul>
+          <li>
+            <label>Card holder name:</label>
+            <input type="text" id="card-name" placeholder="Card holder" autocomplete="off" />
+          </li>
+          <li>
+            <label>Credit card number:</label>
+            <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" />
+          </li>
+          <li>
+            <label>Expiration year:</label>
+            <input id="exp-year" type="text" placeholder="2028" autocomplete="off" />
+          </li>
+          <li>
+            <label>Expiration month:</label>
+            <input id="exp-month" type="text" placeholder="12" autocomplete="off"/>
+          </li>
+          <li>
+            <label>Security code:</label>
+            <input id="card-cvv" type="text" placeholder="123" autocomplete="off" />
+          </li>
+       </ul>
+       <input type="button" id="submit-pay" value="Pay!" />
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
